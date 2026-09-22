@@ -21,19 +21,19 @@ void main() {
     System.out.print("il: ");
     int year = scanner.nextInt();
     int day;
-    switch (ay) {
+    switch (month) {
         case 2:
-            if (il % 400 == 0 || (il % 4 == 0 && il % 100 != 0))
-                gun = 29;
+            if (year % 400 == 0 || (year % 4 == 0 && year % 100 != 0))
+                day = 29;
             else
-                gun = 28;
+                day = 28;
             break;
 
         case 4:
         case 6:
         case 9:
         case 11:
-            gun = 30;
+            day = 30;
             break;
 
         case 1:
@@ -43,7 +43,7 @@ void main() {
         case 8:
         case 10:
         case 12:
-            gun = 31;
+            day = 31;
             break;
 
         default:
